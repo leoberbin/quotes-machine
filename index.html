@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Quote Machine Ramdon</title>
+    <!-- libreria jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- libreria jquery-ui - esta contiene animate()  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./scripst.js"></script>
+</head>
+<body>
+    <!-- #quote-box debe estar centrado -->
+        <div id="quote-box" class="container-fluid well">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <span id="text"></span>
+                </div>
+            </div>
+            <div class="row text-right">
+                <div class="col-xs-12">
+                    <span id="author"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="link">
+                        <a id="tweet-quote" class="btn btn-default" href="" title="Share in Twitter" target="_blank"><i class="fab fa-twitter"></i>
+                        </a>
+                        <a id="tumblr-quote" class="btn btn-default" href="https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=&content=&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button" title="Share in Tumblr" target="_blank"><i class="fab fa-tumblr"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6"></div>
+                <div class="col-xs-4">
+                    <button id="new-quote" class="btn btn-block btn-default"></button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

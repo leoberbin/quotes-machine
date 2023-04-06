@@ -1,0 +1,72 @@
+*{
+    --prime-color:purple;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 300px;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: var(--prime-color);
+    color: var(--prime-color);
+}
+#quote-box{
+    width: 600px;
+}
+.row{
+    margin: 2rem auto;
+    margin-bottom: 0;
+}
+.fa-quote-left{
+    font-size: 2.5rem;
+}
+#author{
+    font-weight: 700;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-default{
+    margin: 0 0.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--prime-color);
+}
+#new-quote::after{
+    content:"new quote";
+    text-align: center;
+}
+
+@media(max-width:700px){
+    #text *{
+      font-size: 18px;
+    }
+    #author{
+      font-size: 13px;
+    }
+    #quote-box{
+      width: 95%;
+    }
+}
+
+@media(max-width:500px){
+    #new-quote::after{ 
+        content:"new";
+    }
+}
+
+@media(max-width:350px){
+    #text *{
+      font-size: 15px;
+    }
+    #author{
+      font-size: 10px;
+    }
+    #new-quote::after{ 
+      content:"➤";
+    }
+}
